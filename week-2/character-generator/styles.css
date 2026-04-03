@@ -3,9 +3,67 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Marcellino Modesto
+  Date: 4/3/2026
+  Filename: styles.css
 */
 
 /* Your CSS goes here */
+body {
+    background-image: url(dungeon.jpg);
+    background-size: cover;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainer{
+    background: #6d74e0;
+    padding: 25px;
+    border: 2px solid #d7845e;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+button {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 10px;
+}
+
+label {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: black;
+}
+
+#characterOutput {
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d7845e;
+    text-align: left;
+}
+
+#characterOutput h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+#characterOutput p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #ffffff;
+}
