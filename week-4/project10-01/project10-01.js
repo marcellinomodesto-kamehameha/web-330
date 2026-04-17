@@ -4,11 +4,12 @@
       Project 10-01
 
       Project to create a drag and drop jigsaw puzzle
-      Author: 
-      Date:   
+      Author: Marcellino Modesto
+      Date: 4/17/2026
 
       Filename: project10-01.js
 */
+
 
 // Reference to the puzzle board
 let puzzleBoard = document.getElementById("puzzleBoard");
@@ -37,9 +38,45 @@ for (let i = 0; i < 48; i++) {
    piece.style.top = (rowNum - 1)*98 + 7 + "px";
    piece.style.left = (colNum - 1)*98 + 7 + "px";
    piece.draggable = false; // override the default draggability of images
-   puzzleBoard.appendChild(piece);      
+   puzzleBoard.appendChild(piece);
 }
 
 // Node list representing the puzzle pieces
 let pieces = document.querySelectorAll("div#puzzleBoard img");
+
+for(let items of pieces) {
+    items.addEventListener("pointerdown", grabPiece);
+}
+
+function grabPiece(e) {
+pointerX = e.clientX;
+pointerY = e.clientY;
+
+e.target.style.touchAction = "none";
+
+zCounter++;
+e.target.style.zIndex = zCounter;
+
+pieceX = e.target.offsetLeft;
+pieceY = e.target.offsetTop;
+
+e.target.addEventListener("pointermove", movePiece);
+e.target.addEventListener("pointerup", dropPiece);
+}
+
+function movePiece(e) {
+    let diffX = e.clientX - pointerX;
+    let diffY = e.clientY - pointerY;
+
+    e.target.style.left = pieceX + diffX + "px";
+    e.target.style.top = pieceY + diffY + "px";
+
+}
+
+function dropPiece(e) {
+    e.target.removeEventListener("pointermove", movePiece);
+    e.target.removeEventListener("pointerup", dropPiece);
+
+}
+
 

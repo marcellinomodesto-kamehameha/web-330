@@ -5,11 +5,12 @@
       Chapter case
 
       Custom Objects Used in Poker Games
-      Author:
-      Date:
+
+      Date:   11/5/24
 
       Filename:       objects.js
  */
+
 /* Object defining the poker game */
 let pokerGame = {
    currentBank: null,
@@ -87,25 +88,6 @@ function pokerHand(handLength) {
 pokerHand.prototype.replaceCard = function(index, pokerDeck) {
    this.cards[index] = pokerDeck.cards.shift();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -240,5 +222,9 @@ pokerHand.prototype.getHandValue = function() {
    +-------------------------------------------------*/
 
 
- 
+
+
+
+
+
 
