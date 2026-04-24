@@ -17,8 +17,6 @@ let tables = [
   { tableNumber: 4, capacity: 6, isReserved: true }
 ];
 
-
-// Create an in-memory object array for each table in the restaurant
 // Create a function reserveTable
 function reserveTable(tableNumber, callback, time) {
   let table = tables.find(t => t.tableNumber === parseInt(tableNumber));
