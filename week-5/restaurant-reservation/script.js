@@ -42,7 +42,7 @@ function displayMessage(message) {
 document.getElementById("reservationForm")
 .addEventListener("submit", function (e) {
 e.preventDefault();
-
+ 
   let name = document.getElementById("name").value;
   let tableNumber = document.getElementById("tableNumber").value;
 

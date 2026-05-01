@@ -22,8 +22,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
    margin: 0;
@@ -35,7 +35,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
    display: block;
 }
@@ -69,8 +69,8 @@ table {
 }
 
 body > header {
-   width: 100%; 
-   background-color: white; 
+   width: 100%;
+   background-color: white;
    position: relative;
 }
 
@@ -130,13 +130,13 @@ nav#links ul li {
 }
 
 nav#links li.linktitle  {
-   color: rgb(229, 247, 165); 
+   color: rgb(229, 247, 165);
    font-size: 1em;
    margin: 20px 0 8px;
 }
 
 nav#links ul li a {
-   text-decoration: none; 
+   text-decoration: none;
    color: white;
 }
 
@@ -179,7 +179,7 @@ body > section > article#stories cite {
    padding-bottom: 7px;
    margin: 0 20px 10px 0;
    border-bottom: 1px solid rgb(0, 78, 156)}
-   
+
 body > section > article#stories img {
    display: block;
    width: 70%;
@@ -194,8 +194,9 @@ aside#news {
 }
 
 aside#news > article {
-   border-bottom: 
+   border-bottom:
 }
+
 aside#news h1 {
    font-size: 1.1em;
    font-weight: bold;
